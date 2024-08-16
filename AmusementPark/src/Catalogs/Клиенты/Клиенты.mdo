@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b5a95db-9818-41f4-b99d-41d0aca3c8cc">
+  <producedTypes>
+    <objectType typeId="679182ea-58ca-4cdf-ae17-02594c3e1d31" valueTypeId="8be3ebe4-fa4d-4e7d-aa16-c6ba0c3d1ad4"/>
+    <refType typeId="1e26cbd2-bfad-4a5d-89bd-bca02b219e0b" valueTypeId="8d6590e8-6636-43bb-8adf-1b3f4eb6301f"/>
+    <selectionType typeId="f558ea2b-431c-476b-a29c-c99346bcb0d2" valueTypeId="45865ad5-c3bb-4a01-aef4-a415db33bfe0"/>
+    <listType typeId="5bb0283d-2f98-498d-9e05-e7f8c6e72ed2" valueTypeId="4cceb65f-6d4c-4a86-bb01-4c0c852fdad8"/>
+    <managerType typeId="d5eafd81-c186-4bb2-a0c9-3b6eff0f0569" valueTypeId="dc29dedf-bc87-4dac-8509-a7afc2795059"/>
+  </producedTypes>
+  <name>Клиенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Клиенты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Клиенты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Клиенты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Клиенты.Attribute.Телефон</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Клиент</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Клиенты</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b09f7050-18de-49cf-a1f4-e197674ba343">
+    <name>Телефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

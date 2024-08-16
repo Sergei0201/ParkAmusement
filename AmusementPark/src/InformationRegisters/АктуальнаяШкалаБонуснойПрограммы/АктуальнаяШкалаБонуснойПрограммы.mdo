@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff367d40-5ffa-4b2d-8063-67234793f79c">
+  <producedTypes>
+    <selectionType typeId="0eaffeb0-4926-4dcb-8b4b-67b50bb5b01d" valueTypeId="754c7dc5-d931-4ad5-9542-5bbe2fcbe441"/>
+    <listType typeId="b5c0f131-05df-4dff-9bcd-3c72f637c941" valueTypeId="e707525b-38d3-4045-92d6-37eb5775660a"/>
+    <managerType typeId="cb253d90-1155-457a-8885-8b99043a28ab" valueTypeId="5406a913-c09e-4860-b886-9c49fb1f78ec"/>
+    <recordSetType typeId="6d9442c2-4882-4d4d-925e-8d7f6d513ad0" valueTypeId="11d16591-032d-4101-8c72-5322a2229340"/>
+    <recordKeyType typeId="4e0190d4-38df-452c-ad7c-80cbe84eb5b8" valueTypeId="cb6b6152-ef3c-42e2-a9de-2027e50d9fe3"/>
+    <recordType typeId="d954ad37-5b3c-4988-97e9-cb5573e35a9a" valueTypeId="b6ce205b-2e6b-4fce-9671-a64fb5b9a611"/>
+    <recordManagerType typeId="0c0a82b2-e29a-4157-9dc1-dad8365c5572" valueTypeId="99075700-220b-4c3b-aad3-f1623ac552c5"/>
+  </producedTypes>
+  <name>АктуальнаяШкалаБонуснойПрограммы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуальная шкала бонусной программы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="952568ba-efcd-4edc-8b27-d0b61f9d6080">
+    <name>Шкала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шкала</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ШкалаБонуснойПрограммы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
