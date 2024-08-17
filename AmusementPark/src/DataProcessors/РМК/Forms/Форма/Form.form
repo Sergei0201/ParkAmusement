@@ -79,6 +79,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ПозицииПродажи.Номенклатура</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПозицииПродажиНоменклатураПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ПозицииПродажиНоменклатураРасширеннаяПодсказка</name>
             <id>19</id>
@@ -129,6 +133,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ПозицииПродажи.Цена</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПозицииПродажиЦенаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ПозицииПродажиЦенаРасширеннаяПодсказка</name>
             <id>22</id>
@@ -179,6 +187,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>ПозицииПродажи.Количество</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ПозицииПродажиКоличествоПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ПозицииПродажиКоличествоРасширеннаяПодсказка</name>
             <id>25</id>
@@ -279,6 +291,14 @@
           <horizontalAlign>Left</horizontalAlign>
           <autoFill>true</autoFill>
         </autoCommandBar>
+        <handlers>
+          <event>Drag</event>
+          <name>ПозицииПродажиПеретаскивание</name>
+        </handlers>
+        <handlers>
+          <event>OnChange</event>
+          <name>ПозицииПродажиПриИзменении</name>
+        </handlers>
         <searchStringAddition>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -437,6 +457,7 @@
         <initialListView>Auto</initialListView>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
+        <enableDrag>true</enableDrag>
         <fileDragMode>AsFileRef</fileDragMode>
         <rowFilter xsi:type="core:UndefinedValue"/>
       </items>
@@ -654,6 +675,10 @@
           <event>Selection</event>
           <name>СписокНоменклатурыВыбор</name>
         </handlers>
+        <handlers>
+          <event>DragStart</event>
+          <name>СписокНоменклатурыНачалоПеретаскивания</name>
+        </handlers>
         <searchStringAddition>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -813,6 +838,7 @@
         <initialListView>Auto</initialListView>
         <horizontalStretch>true</horizontalStretch>
         <verticalStretch>true</verticalStretch>
+        <enableStartDrag>true</enableStartDrag>
         <fileDragMode>AsFileRef</fileDragMode>
         <rowPictureDataPath xsi:type="form:DataPath">
           <segments>СписокНоменклатуры.DefaultPicture</segments>
@@ -910,6 +936,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>БаллыКСписанию</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>БаллыКСписаниюПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>БаллыКСписаниюРасширеннаяПодсказка</name>
         <id>33</id>
@@ -1087,6 +1117,7 @@
       <key>ru</key>
       <value>ГруппаБаллыСумма</value>
     </title>
+    <horizontalStretch>true</horizontalStretch>
     <extendedTooltip>
       <name>ГруппаБаллыСуммаРасширеннаяПодсказка</name>
       <id>30</id>
@@ -1414,6 +1445,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗаписатьПродажу</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
