@@ -4,13 +4,59 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>Catalog.Клиенты</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Номенклатура</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Аттракционы</name>
 		<right>
 			<name>InteractiveDelete</name>
 			<value>false</value>
 		</right>
 		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
 			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -20,6 +66,21 @@
 			<name>InteractiveDelete</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ШкалаБонуснойПрограммы</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Document.ПосещениеАттракциона</name>
@@ -27,13 +88,13 @@
 			<name>InteractiveDelete</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
 	</object>
 	<object>
 		<name>Configuration.AmusementPark</name>
-		<right>
-			<name>UpdateDataBaseConfiguration</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>ExclusiveMode</name>
 			<value>false</value>
@@ -43,71 +104,31 @@
 			<value>false</value>
 		</right>
 		<right>
-			<name>EventLog</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>MobileClient</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>ThickClient</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>ExternalConnection</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Automation</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>TechnicalSpecialistMode</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>CollaborationSystemInfoBaseRegistration</name>
 			<value>false</value>
 		</right>
 		<right>
-			<name>MainWindowModeNormal</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>MainWindowModeWorkplace</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
 			<name>MainWindowModeEmbeddedWorkplace</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
 			<name>MainWindowModeFullscreenWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeKiosk</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
 			<name>AnalyticsSystemClient</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
 			<name>ExclusiveModeTerminationAtSessionStart</name>
 			<value>false</value>
 		</right>
 		<right>
-			<name>InteractiveOpenExtDataProcessors</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>InteractiveOpenExtReports</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Output</name>
+			<name>SaveUserData</name>
 			<value>false</value>
 		</right>
 	</object>
@@ -115,6 +136,36 @@
 		<name>Document.ПродажаБилета.Command.Билет</name>
 		<right>
 			<name>View</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.УстановкаЦенНоменклатуры</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыАттракционов</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeletePredefinedData</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarkedPredefinedData</name>
 			<value>false</value>
 		</right>
 	</object>
